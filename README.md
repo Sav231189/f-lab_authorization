@@ -3,13 +3,20 @@
 Блок пагинации.
 
 
-![Image alt](https://github.com/Sav231189/pogination/raw/master/src/assets/images/image.png)
+![Image alt](https://github.com/Sav231189/f-lab_pagination/raw/master/src/assets/images/image.png)
 
 ##
 
-##### если ваш сборщик не обрабатывает mode_module, скопируйте компонент из node_module в src. Или запустите команду в терминале из проекта: 
-`mkdir src/other_components && mv node_modules/sav_pagination src/other_components`
+##### Installation: 
+`npm install f-lab_pagination`
 
+##
+##### imports: 
+`import Pagination from "f-lab_pagination";`
+
+ `import 'f-lab_pagination/dist/index.css'`
+
+##
 ### Принимает параметры с настройками обработки:
 
 `changePage` - callback функция, вызывается при нажатии кнопок пагинации, в параметр функции передается номер (string) страницы которую необходимо отобразить.
