@@ -1,30 +1,39 @@
-# f-lab_pagination
+# Pagination
 
-> pagination
+Блок пагинации.
 
-[![NPM](https://img.shields.io/npm/v/f-lab_pagination.svg)](https://www.npmjs.com/package/f-lab_pagination) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Install
+![Image alt](https://github.com/Sav231189/pogination/raw/master/src/assets/images/image.png)
 
-```bash
-npm install --save f-lab_pagination
-```
+##
 
-## Usage
+##### если ваш сборщик не обрабатывает mode_module, скопируйте компонент из node_module в src. Или запустите команду в терминале из проекта: 
+`mkdir src/other_components && mv node_modules/sav_pagination src/other_components`
 
-```jsx
-import React, { Component } from 'react'
+### Принимает параметры с настройками обработки:
 
-import MyComponent from 'f-lab_pagination'
-import 'f-lab_pagination/dist/index.css'
+`changePage` - callback функция, вызывается при нажатии кнопок пагинации, в параметр функции передается номер (string) страницы которую необходимо отобразить.
+По умолчанию пустая функция.
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
+`totalPageCount` - число, общее количество элементов (не страниц!) для отображения. 1 - по умолчанию.
 
-## License
+`pageSize` - число, количество отображаемых элементов на одной странице. 1 - по умолчанию.
 
-MIT © [Sav231189](https://github.com/Sav231189)
+`pageActiveNumber` - число, активная страница. 1 - по умолчанию.
+
+`countShowItem` - число, колличество отображаемых страниц в блоке пагинации (в 1-ой порции). 1 - по умолчанию.
+##
+
+### Принимает параметры с настройками отображения:
+
+`firstPageBtn` - boolean, отображать ли кнопку "<<" первая страница. true - по учолчанию.
+
+`lastPageBtn` - boolean, отображать ли кнопку ">>" последняя страница. true - по учолчанию.
+
+`prevPageBtn` - boolean, отображать ли кнопку "<" предыдущая страница. false - по учолчанию.
+
+`nextPageBtn` - boolean, отображать ли кнопку ">" следующая страница. false - по учолчанию.
+
+`ellipsisBtn` - boolean, отображать ли кнопки "..." перелистывает порцию страниц и активирует первую страницу в новой порции. false - по учолчанию.
+
+`showLastPage` - boolean, отображать ли последнюю страницу в блоке пагиниции. false - по учолчанию.
