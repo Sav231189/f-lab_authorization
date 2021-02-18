@@ -4,6 +4,7 @@
   width: 320px;
   max-height: 420px;
   min-height: 230px;
+  text-align: start;
   border: grey solid 1px;
   border-radius: 4px;
   font-family: sans-serif;
@@ -200,6 +201,7 @@
   width: 320px;
   max-height: 420px;
   min-height: 230px;
+  text-align: start;
   border: grey solid 1px;
   border-radius: 4px;
   font-family: sans-serif;
