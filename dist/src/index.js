@@ -1,3 +1,3 @@
-import Pagination from './Pagination'
-import './Pagination.module.css'
-export default Pagination
+import Authorization from './Authorization'
+import './Authorization.module.css'
+export default Authorization

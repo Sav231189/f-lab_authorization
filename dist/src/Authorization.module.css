@@ -1,0 +1,220 @@
+.Authorization {
+  position: relative;
+  padding: 0 20px 14px;
+  width: 320px;
+  max-height: 420px;
+  min-height: 230px;
+  border: grey solid 1px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.Authorization .mode__login, .Authorization .mode__registration, .Authorization .mode__reset {
+  display: grid;
+  grid-template-rows: 50px 1fr auto;
+  grid-auto-rows: auto;
+}
+.Authorization .mode__login .header, .Authorization .mode__registration .header, .Authorization .mode__reset .header {
+  align-self: end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.Authorization .mode__login .header .header__login, .Authorization .mode__registration .header .header__login, .Authorization .mode__reset .header .header__login {
+  font-size: 26px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+.Authorization .mode__login .header .header__link, .Authorization .mode__registration .header .header__link, .Authorization .mode__reset .header .header__link {
+  align-self: end;
+  padding: 5px 5px 2px;
+  justify-self: right;
+  font-size: 14px;
+  text-align: right;
+  color: blue;
+  position: relative;
+  top: -1px;
+  cursor: pointer;
+}
+.Authorization .mode__login .main .main__error, .Authorization .mode__registration .main .main__error, .Authorization .mode__reset .main .main__error {
+  margin: 4px 0 6px;
+  height: 30px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  color: red;
+}
+.Authorization .mode__login .main input, .Authorization .mode__registration .main input, .Authorization .mode__reset .main input {
+  padding-left: 10px;
+  width: 94%;
+  height: 30px;
+  margin-bottom: 20px;
+  border: grey solid 1px;
+}
+.Authorization .mode__login .main .main__btn, .Authorization .mode__registration .main .main__btn, .Authorization .mode__reset .main .main__btn {
+  margin: 0 0 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #00c24a;
+  color: #333333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Authorization .mode__login .main .main__btn:hover, .Authorization .mode__registration .main .main__btn:hover, .Authorization .mode__reset .main .main__btn:hover {
+  background-color: #00a840;
+}
+.Authorization .mode__login .main .main__btn:active, .Authorization .mode__registration .main .main__btn:active, .Authorization .mode__reset .main .main__btn:active {
+  transform: scale(0.994);
+}
+.Authorization .mode__login .main .main__btn.regBtn, .Authorization .mode__registration .main .main__btn.regBtn, .Authorization .mode__reset .main .main__btn.regBtn {
+  margin: 8.5px 0 20px;
+}
+.Authorization .mode__login .bottom, .Authorization .mode__registration .bottom, .Authorization .mode__reset .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.Authorization .mode__login .bottom .bottom_remember input, .Authorization .mode__registration .bottom .bottom_remember input, .Authorization .mode__reset .bottom .bottom_remember input {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.Authorization .mode__login .bottom .bottom_remember span, .Authorization .mode__registration .bottom .bottom_remember span, .Authorization .mode__reset .bottom .bottom_remember span {
+  position: relative;
+  top: -4px;
+  font-size: 16px;
+}
+.Authorization .mode__login .bottom .bottom_resetPassword, .Authorization .mode__registration .bottom .bottom_resetPassword, .Authorization .mode__reset .bottom .bottom_resetPassword {
+  font-size: 14px;
+  text-align: right;
+  color: blue;
+  position: relative;
+  top: -1px;
+  cursor: pointer;
+}
+.Authorization .mode__login .googleLogin .or, .Authorization .mode__registration .googleLogin .or, .Authorization .mode__reset .googleLogin .or {
+  margin: 10px 0 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+.Authorization .mode__login .googleLogin .or span:before, .Authorization .mode__registration .googleLogin .or span:before, .Authorization .mode__reset .googleLogin .or span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 50%;
+  height: 1px;
+  background-color: grey;
+}
+.Authorization .mode__login .googleLogin .or span:after, .Authorization .mode__registration .googleLogin .or span:after, .Authorization .mode__reset .googleLogin .or span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 50%;
+  height: 1px;
+  background-color: grey;
+}
+.Authorization .mode__login .googleLogin .googleLoginBtn, .Authorization .mode__registration .googleLogin .googleLoginBtn, .Authorization .mode__reset .googleLogin .googleLoginBtn {
+  margin-bottom: 14px;
+  display: block;
+  background-color: #d1d1d1;
+  padding: 8px 20px;
+  text-align: center;
+  border: grey solid 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Authorization .mode__login .googleLogin .googleLoginBtn:hover, .Authorization .mode__registration .googleLogin .googleLoginBtn:hover, .Authorization .mode__reset .googleLogin .googleLoginBtn:hover {
+  background-color: #9f9f9f;
+}
+.Authorization .mode__login .googleLogin .googleLoginBtn:active, .Authorization .mode__registration .googleLogin .googleLoginBtn:active, .Authorization .mode__reset .googleLogin .googleLoginBtn:active {
+  transform: scale(0.994);
+}
+.Authorization .loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+  backdrop-filter: blur(2px);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Authorization .loading .ldsRing {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.Authorization .loading .ldsRing div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.4s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.Authorization .loading .ldsRing div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.Authorization .loading .ldsRing div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.Authorization .loading .ldsRing div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+.Authorization .closeWindow {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.Authorization .closeWindow:hover {
+  border: #2e2e2e solid 1px;
+}
+.Authorization .closeWindow:active {
+  transform: scale(0.98);
+}
+.Authorization .closeWindow div:first-child {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #2e2e2e;
+}
+.Authorization .closeWindow div:last-child {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #2e2e2e;
+}
+
+/*# sourceMappingURL=Authorization.module.css.map */

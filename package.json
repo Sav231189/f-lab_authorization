@@ -1,10 +1,10 @@
 {
-  "name": "f-lab_pagination",
+  "name": "f-lab_authorization",
   "version": "1.0.0",
-  "description": "pagination",
+  "description": "authorization",
   "author": "Sav231189",
   "license": "MIT",
-  "repository": "Sav231189/f-lab_pagination",
+  "repository": "Sav231189/f-lab_authorization",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
